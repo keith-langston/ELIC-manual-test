@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 4 Transcription | Istria-Kvarner spoken corpus: Procedures and guidelines [DRAFT]</title>
+  <meta name="description" content="Chapter 4 Transcription | Istria-Kvarner spoken corpus: Procedures and guidelines [DRAFT]" />
+  <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 4 Transcription | Istria-Kvarner spoken corpus: Procedures and guidelines [DRAFT]" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 4 Transcription | Istria-Kvarner spoken corpus: Procedures and guidelines [DRAFT]" />
+  
+  
+  
+
+<meta name="author" content="Keith Langston" />
+
+
+<meta name="date" content="2023-10-11" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="data-processing.html"/>
+<link rel="next" href="annotation.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Istria-Kvarner spoken corpus: Procedures and Guidelines</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="1" data-path="data-collection.html"><a href="data-collection.html"><i class="fa fa-check"></i><b>1</b> Data collection</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="data-collection.html"><a href="data-collection.html#outline-interview"><i class="fa fa-check"></i><b>1.1</b> Outline of interview</a></li>
+<li class="chapter" data-level="1.2" data-path="data-collection.html"><a href="data-collection.html#recording-instructions"><i class="fa fa-check"></i><b>1.2</b> Recording instructions</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="data-management.html"><a href="data-management.html"><i class="fa fa-check"></i><b>2</b> Data management</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="data-management.html"><a href="data-management.html#file-types-file-names"><i class="fa fa-check"></i><b>2.1</b> File types and file names used in this project</a></li>
+<li class="chapter" data-level="2.2" data-path="data-management.html"><a href="data-management.html#back-ups"><i class="fa fa-check"></i><b>2.2</b> Backing up data</a></li>
+<li class="chapter" data-level="2.3" data-path="data-management.html"><a href="data-management.html#metadata"><i class="fa fa-check"></i><b>2.3</b> Metadata</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="data-processing.html"><a href="data-processing.html"><i class="fa fa-check"></i><b>3</b> Data processing</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="data-processing.html"><a href="data-processing.html#segment-interview"><i class="fa fa-check"></i><b>3.1</b> Segment interview into smaller chunks</a></li>
+<li class="chapter" data-level="3.2" data-path="data-processing.html"><a href="data-processing.html#speech-to-text"><i class="fa fa-check"></i><b>3.2</b> Speech to text</a></li>
+<li class="chapter" data-level="3.3" data-path="data-processing.html"><a href="data-processing.html#speaker-diarization"><i class="fa fa-check"></i><b>3.3</b> Speaker diarization</a></li>
+<li class="chapter" data-level="3.4" data-path="data-processing.html"><a href="data-processing.html#forced-alignment"><i class="fa fa-check"></i><b>3.4</b> Forced alignment</a></li>
+<li class="chapter" data-level="3.5" data-path="data-processing.html"><a href="data-processing.html#prepare-ELAN"><i class="fa fa-check"></i><b>3.5</b> Prepare ELAN file for annotation</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="transcription.html"><a href="transcription.html"><i class="fa fa-check"></i><b>4</b> Transcription</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="transcription.html"><a href="transcription.html#using-praat-transcription"><i class="fa fa-check"></i><b>4.1</b> Using Praat to transcribe audio</a></li>
+<li class="chapter" data-level="4.2" data-path="transcription.html"><a href="transcription.html#general-principles-transcription"><i class="fa fa-check"></i><b>4.2</b> General principles for transcription</a></li>
+<li class="chapter" data-level="4.3" data-path="transcription.html"><a href="transcription.html#čakavian-štokavian-transcription"><i class="fa fa-check"></i><b>4.3</b> Čakavian and Štokavian varieties</a></li>
+<li class="chapter" data-level="4.4" data-path="transcription.html"><a href="transcription.html#istro-romanian-transcription"><i class="fa fa-check"></i><b>4.4</b> Istro-Romanian</a></li>
+<li class="chapter" data-level="4.5" data-path="transcription.html"><a href="transcription.html#istriot-transcription"><i class="fa fa-check"></i><b>4.5</b> Istriot</a></li>
+<li class="chapter" data-level="4.6" data-path="transcription.html"><a href="transcription.html#istro-venetian-transcription"><i class="fa fa-check"></i><b>4.6</b> Istro-Venetian and Fiuman</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="annotation.html"><a href="annotation.html"><i class="fa fa-check"></i><b>5</b> Annotation</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="annotation.html"><a href="annotation.html#using-ELAN-annotation"><i class="fa fa-check"></i><b>5.1</b> Using ELAN to annotate audio</a></li>
+<li class="chapter" data-level="5.2" data-path="annotation.html"><a href="annotation.html#lemmatization"><i class="fa fa-check"></i><b>5.2</b> Lemmatization</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="annotation.html"><a href="annotation.html#čakavian-lemmatization"><i class="fa fa-check"></i><b>5.2.1</b> Čakavian</a></li>
+<li class="chapter" data-level="5.2.2" data-path="annotation.html"><a href="annotation.html#istro-romanian-lemmatization"><i class="fa fa-check"></i><b>5.2.2</b> Istro-Romanian</a></li>
+<li class="chapter" data-level="5.2.3" data-path="annotation.html"><a href="annotation.html#istriot-lemmatization"><i class="fa fa-check"></i><b>5.2.3</b> Istriot</a></li>
+<li class="chapter" data-level="5.2.4" data-path="annotation.html"><a href="annotation.html#istro-venetian-lemmatization"><i class="fa fa-check"></i><b>5.2.4</b> Istro-Venetian</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="annotation.html"><a href="annotation.html#pos-tags"><i class="fa fa-check"></i><b>5.3</b> Part of speech tags</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="annotation.html"><a href="annotation.html#čakavian-pos"><i class="fa fa-check"></i><b>5.3.1</b> Čakavian</a></li>
+<li class="chapter" data-level="5.3.2" data-path="annotation.html"><a href="annotation.html#istro-romanian-pos"><i class="fa fa-check"></i><b>5.3.2</b> Istro-Romanian</a></li>
+<li class="chapter" data-level="5.3.3" data-path="annotation.html"><a href="annotation.html#istriot-pos"><i class="fa fa-check"></i><b>5.3.3</b> Istriot</a></li>
+<li class="chapter" data-level="5.3.4" data-path="annotation.html"><a href="annotation.html#istro-venetian-pos"><i class="fa fa-check"></i><b>5.3.4</b> Istro-Venetian</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="annotation.html"><a href="annotation.html#morphosyntactic-features"><i class="fa fa-check"></i><b>5.4</b> Morphosyntactic features</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="annotation.html"><a href="annotation.html#čakavian-morphosyntactic-features"><i class="fa fa-check"></i><b>5.4.1</b> Čakavian</a></li>
+<li class="chapter" data-level="5.4.2" data-path="annotation.html"><a href="annotation.html#istro-romanian-morphosyntactic-features"><i class="fa fa-check"></i><b>5.4.2</b> Istro-Romanian</a></li>
+<li class="chapter" data-level="5.4.3" data-path="annotation.html"><a href="annotation.html#istriot-istro-venetian-morphosyntactic-features"><i class="fa fa-check"></i><b>5.4.3</b> Istriot and Istro-Venetian</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="annotation.html"><a href="annotation.html#language-contact"><i class="fa fa-check"></i><b>5.5</b> Language contact phenomena</a></li>
+<li class="chapter" data-level="5.6" data-path="annotation.html"><a href="annotation.html#translation"><i class="fa fa-check"></i><b>5.6</b> Translation</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Istria-Kvarner spoken corpus: Procedures and guidelines [DRAFT]</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="transcription" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">Chapter 4</span> Transcription<a href="transcription.html#transcription" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Transcribers will receive a .wav audio file and a Praat .TextGrid file, with utterance boundaries marked [and possibly with a preliminary automatic transcription, if this seems helpful]. Instructions for using Praat for transcription are included in Section <a href="transcription.html#using-praat-transcription">4.1</a>, while the conventions for transcription are described in the following sections. <span style="color: red;">Include other options and instructions for transcribers who are unable to use Praat??, or for when speech to text is not accurate enough to be helpful. Note that if we use a standard Italian or Romanian model for speech to text, the orthography may not match our transcription conventions, which are TBD</span></p>
+<div id="using-praat-transcription" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Using Praat to transcribe audio<a href="transcription.html#using-praat-transcription" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><span style="color: red;">(Transcribers will be trained in Praat prior to beginning their work; these instructions are just a reminder.)</span></p>
+<ul>
+<li><p>Open the .wav and corresponding .TextGrid file in Praat. Start Praat by double-clicking on the Praat icon, use the menu items <em>Open &gt; Read from file</em>, then select the files.</p></li>
+<li><p>Click on the first file in the Praat Objects window and shift click on the second file to select them both.</p></li>
+<li><p>Click the <strong>View &amp; Edit</strong> button on the right side of the Objects window. Use the <strong>in</strong> and <strong>out</strong> buttons on the bottom of the Editor window to zoom in or out as needed.</p></li>
+<li><p>Click in an interval to select it (the active interval will be highlighted in yellow).</p></li>
+<li><p>Use the Tab key to start and stop playback of the audio. You can reselect the interval to move the cursor back to the beginning, or click anywhere in the spectrogram or waveform to place the cursor at the desired position.</p></li>
+<li><p>Adjust the utterance boundaries as needed. Click on a boundary and drag to reposition it. To add a new boundary, click in the spectrogram or waveform to place the cursor, then click in the circle at the top of the tier where you want to place the boundary. To delete a boundary, select the boundary you want to remove and press Alt + Delete (Windows) or Option + Delete (Mac).</p></li>
+<li><p>Type the transcription in the active interval or in the text editor box at the top of the window.</p></li>
+<li><p>Save your work regularly! Praat does not automatically save anything, so be sure to save your TextGrid file (<em>Save &gt; Save as text file</em>) every few minutes. You do NOT need to re-save the audio file, because you will not be making any changes to it.</p></li>
+</ul>
+<p><strong>Suggested workflow:</strong></p>
+<p>It is generally easier to transcribe audio in successive phases:</p>
+<ol style="list-style-type: decimal">
+<li><p>Do a rough transcription that captures all the important words, assigning the transcription to the correct speaker (i.e., making sure that the transcription is in the appropriate tier).</p></li>
+<li><p>Listen to the audio again and add fillers, hesitations, repetitions, self-corrections, and non-linguistic events.</p></li>
+<li><p>Review the transcription for accuracy and make corrections as needed.</p></li>
+</ol>
+</div>
+<div id="general-principles-transcription" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> General principles for transcription<a href="transcription.html#general-principles-transcription" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>We use a simple system for transcribing speech. Since the audio is available alongside the transcription, it is not necessary to indicate certain finer details that are marked in some systems of transcription (e.g., measuring pauses or indicating emphasis or intonation patterns). The system described here is similar to the HIAT conventions (<a href="https://www.exmaralda.org/pdf/HIAT_EN.pdf" class="uri">https://www.exmaralda.org/pdf/HIAT_EN.pdf</a>) and to conventions often used in conversation analysis. It generally follows standard orthographic principles and uses fewer special symbols than CHAT, GAT2 or the Jeffersonian system of transcription, in order to make the transcription more easily readable. The transcription of individual varieties is described in more detail in the following sections.</p>
+<p><strong>Rules for transcription</strong></p>
+<ul>
+<li><p>Use standard orthography (if there is a standard system), including capitalization.</p></li>
+<li><p>Spell out numbers, dates, and other words that are typically abbreviated in writing.</p></li>
+<li><p>Use conventional spellings for interjections. Common interjections are listed in the sections for the different languages below.</p></li>
+<li><p>Use single parentheses for uncertain words or phrases in the transcription: (word)</p></li>
+<li><p>If a word or phrase is completely unintelligible, write the letter x in single parentheses (x). However, this should be used only as a last resort. Whenever possible, make your best guess as to what was said and enclose it in parentheses, as noted above. Leaving unintelligible words or phrases as (x) may cause problems in the automatic alignment of the transcription with the audio.</p></li>
+<li><p>Use standard punctuation to terminate complete utterances:<br />
+assertions .<br />
+questions ?<br />
+exclamations !</p></li>
+<li><p>Self interruptions or hesitations followed by retracing, repair, or reformulation are indicated by a single hyphen, followed by a blank space: - . For example:</p>
+<p><em>i- i- i- vajk su gledali za nikako poć napret</em><br />
+‘and- and- and- they always looked to get ahead somehow’.</p>
+<p>If the word is incomplete, transcribe as much as you hear; e.g., <em>Is- Istra</em></p></li>
+<li><p>A short pause within an utterance is indicated by a period within single parentheses: (.)</p></li>
+<li><p>An audible breath within an utterance is indicated by ((breath)). If there is a breath during a pause between utterances, no notation is needed.</p></li>
+<li><p>Other non-linguistic events are described in double parentheses; e.g. ((coughs)), ((laughs)), etc. These can be labeled in English, Croatian, or Italian.</p></li>
+</ul>
+<p>Example:</p>
+<p><em>@ Trviž je- @ Trviš kako Trviš je @- je @ (.) mićo mesto, nekih @ ((coughs)) (dvestotinjak) judi ima, ali @ s- župa Trviš ima- je veća.</em> 
+‘Uh Trviž is- uh Trviž itself is uh- is uh a little place, it has some (two hundred) people, but uh s- Trviž Parish has- is bigger.’</p>
+</div>
+<div id="čakavian-štokavian-transcription" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> Čakavian and Štokavian varieties<a href="transcription.html#čakavian-štokavian-transcription" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Use characters from the standard Croatian alphabet. Čakavian [t<sup>j</sup>] and Štokavian [tɕ] are both written with the character <em>ć</em>. Diphthongs are written as a sequence of two vowels; e.g., <em>ie, uo</em>. These are standard practices in Croatian dialectology, and they make the transcription accessible for Croatian speakers.</p>
+<p>Some Čakavian varieties may require additional characters, which are indicated in parentheses.</p>
+<pre><code>a b c č ć d đ dž e f g h i j k l lj m n nj o p r s š t u v z ž
+
+(å = [ɒ], ẹ = close [e] vs. e = open [ɛ], ọ = close [o] vs. o = open [ɔ],  
+ü = [y], ö, ə, ɣ, x)
+</code></pre>
+<p>In dialects that have consistent word-final devoicing, this should be indicated in the transcription. <span style="color: red;">[?? not sure if this is a good idea; voicing may vary within the same variety or speaker, depending on the context]</span></p>
+<p>Common fillers indicating hesitation: @ = [ə] (like English “uh”; no conventional spelling exists in Croatian), hm</p>
+<p>Common interjections indicating speaker attitudes/feelings: <em>uh, oh, eh, ih, ah, joj, ijuju, oho, ej, haj, hoj, uf, pi, fuj, juhuhu, kuku, ao, ua</em></p>
+</div>
+<div id="istro-romanian-transcription" class="section level2 hasAnchor" number="4.4">
+<h2><span class="header-section-number">4.4</span> Istro-Romanian<a href="transcription.html#istro-romanian-transcription" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>use Zvjezdana’s system</p>
+</div>
+<div id="istriot-transcription" class="section level2 hasAnchor" number="4.5">
+<h2><span class="header-section-number">4.5</span> Istriot<a href="transcription.html#istriot-transcription" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>no standard way of writing this; speakers of different varieties may write things differently, so we need to come up with our own conventions</p>
+</div>
+<div id="istro-venetian-transcription" class="section level2 hasAnchor" number="4.6">
+<h2><span class="header-section-number">4.6</span> Istro-Venetian and Fiuman<a href="transcription.html#istro-venetian-transcription" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This orthographic transcription system was developed and agreed upon during the Endangered Languages in Contact (ELIC) workshop at the University of Rijeka and University in Pula in June 2023 by a working group consisting of Zvjezdana Vrzić, Ivana Lalli-Paćelat, Sarah Zancovich, Milena Korenika, and Dario Ban. It is an attempt to transcribe the audio recordings orthographically (i.e. not by using the International Phonetic Alphabet) as consistently as possible, while taking into account existing written usage in Istro-Venetian/Fiuman. Since a standard orthography does not exist for Istro-Venetian/Fiuman, the written form of the variety varies from author to author and resource to resource. This is not an attempt to propose a standard way of writing this variety.</p>
+<p>General conventions (in addition to those given at the beginning of Section 4.2):</p>
+<ul>
+<li><p>Use standard Italian orthography unless special orthographic transcription conventions are necessary for Istro-Venetian/Fiuman (see below).</p></li>
+<li><p>Use standard Italian orthography when, according to your judgment, it is clear that the speaker is saying a word or a phrase in standard Italian, e.g. st. It. <em>scuola</em>, not Istro-Ven./Fium. <em>scola</em>.</p></li>
+<li><p>Use standard Croatian orthography when, according to your judgment, it is clear that the speaker is saying a word or a phrase in (standard) Croatian, e.g. <em>mi son</em> <strong>zadužena</strong> <em>per le torte</em></p></li>
+</ul>
+<p>The following table lists graphemes or digraphs (i.e., letters or combinations of letters) specific to Istro-Venetian/Fiuman.</p>
+<table>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Letter</th>
+<th align="left">Approximate phonetic value</th>
+<th align="left">Istro-Venetian examples</th>
+<th align="left">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>&lt;s&gt;</strong></td>
+<td align="left">Cr. [š]/[s]<br>(IPA [ʃ] or [ɕ]/[s])</td>
+<td align="left"><em>insieme,mestier</em></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>&lt;s&gt;</strong></td>
+<td align="left">Cr. [š]<br>(IPA [ʃ] or [ɕ])</td>
+<td align="left"><em>sugaman, simia, siropo, sempio, suto</em></td>
+<td align="left">It. <em>asciugamano, scimmia, sciroppo, scempio, asciutto</em></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>&lt;s&gt;</strong></td>
+<td align="left">Cr. [ž]/[z]<br>(IPA [ʒ] or [ʑ])</td>
+<td align="left"><em>disi, cusir</em></td>
+<td align="left">Between two vowels.</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>&lt;ss&gt;</strong></td>
+<td align="left">Cr. [š]/[s]<br>(IPA [ʃ] or [ɕ]/[s])</td>
+<td align="left"><em>nessun, cussì, podessi, cussin, pesse, capissi, cressuda, lassime</em></td>
+<td align="left">Between vowels; cf. It. <em>nessuno, così, potessi, cuscino, pesce, capisci, crescuita, lasciami</em></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>&lt;z&gt;</strong></td>
+<td align="left">Cr. [ž]/[z]<br>(IPA [ʒ] or [ʑ]/[z])</td>
+<td align="left"><em>zenero, za, zenocio</em></td>
+<td align="left">It. genero, già, ginocchio</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>&lt;z&gt;</strong></td>
+<td align="left">Cr. [c]<br>(IPA [ts])</td>
+<td align="left"><em>fazevo, prezi, fazoleto</em></td>
+<td align="left">It. <em>facevo, prezzi, fazzoletto</em></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>&lt;z&gt;</strong></td>
+<td align="left">Cr. [ž]/[z]<br>(IPA [ʒ] or [ʑ]/[z]</td>
+<td align="left"><em>xe</em></td>
+<td align="left">Pres.3Sing and 3Plur of <em>esser</em> ‘to be’</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>&lt;s’c&gt;</strong></td>
+<td align="left">Cr. [šč]/[šć]<br>(IPA [ʃtʃ]/[ɕtɕ])</td>
+<td align="left"><em>mas’cio, s’ciopar</em></td>
+<td align="left">It. <em>maschio, scoppiare</em></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Other orthographic conventions</strong></p>
+<ul>
+<li><p>As a general rule, do not use geminated (double) consonants (except as indicated in the table above). For example, you should normally write <em>tuto</em> (not <em>tutto</em>).<br>However, per the directions above, you should mark a geminated consonant if the pronunciation immediately strikes you as containing one, suggesting the use of standard Italian pronunciation (e.g., if the speaker clearly pronounces [tutto], you may write <em>tutto</em>). You do not need to specifically listen for the distinction between single and geminated consonants, which is often very subtle. When in doubt, use a single consonant.</p></li>
+<li><p>Mark accents when the position of the stress diverges from the usual stress pattern (as is also done in standard Italian).<br>in truncated past participles; e.g., <em>go publicà, vegnù, gavè</em><br>in specific lexical items; e.g., <em>ventitré, università, città, cussì, però, perché, più, ciò, là, lì, né, sé, sì, tè</em></p></li>
+<li><p>Use an apostrophe, following the standard Italian usage, to mark the cases of <em>elisione</em>; e.g., <em>l’</em> (for <em>la</em>)</p></li>
+<li><p>Do not use an apostrophe, following the standard Italian usage, to mark the cases of <em>troncamento</em>; e.g., <em>dess</em> (for <em>adesso</em>), <em>do</em> (for <em>dove</em>).</p></li>
+<li><p>Exceptionally, use an apostrophe when <em>troncamento</em> happens at the beginning of the word and in certain exceptional cases, such as <em>t’sa</em> (for <em>ti sa</em>).<br>Examples:<br><em>’na volta</em> (for <em>una volta</em>)<br><em>’vanti</em> (for <em>avanti</em>)<br><em>’demo, ’ndemo</em> (for <em>andemo</em>)<br><em>’sta</em> (for <em>questa</em>)</p></li>
+<li><p>Transcribe the definite article and complex prepositions (prepositions with articles) as shown in the following table.</p></li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Masc.Sing</th>
+<th align="left">Fem.Sing</th>
+<th align="left">Masc.Plur</th>
+<th align="left">Fem.Plur</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><em>el, ’l</em><br>see note</td>
+<td align="left"><em>la, l’</em></td>
+<td align="left"><em>i</em></td>
+<td align="left"><em>le</em></td>
+</tr>
+<tr class="even">
+<td align="left"><em>al</em></td>
+<td align="left"><em>a la, a l’</em></td>
+<td align="left"><em>ai</em></td>
+<td align="left"><em>a le</em></td>
+</tr>
+<tr class="odd">
+<td align="left"><em>del</em></td>
+<td align="left"><em>de la, de l’</em></td>
+<td align="left"><em>dei</em></td>
+<td align="left"><em>de le</em></td>
+</tr>
+<tr class="even">
+<td align="left"><em>intel</em></td>
+<td align="left"><em>inte la, inte l’</em></td>
+<td align="left"><em>intei</em></td>
+<td align="left"><em>inte le</em></td>
+</tr>
+<tr class="odd">
+<td align="left"><em>sul</em></td>
+<td align="left"><em>su la, su l’</em></td>
+<td align="left"><em>sui</em></td>
+<td align="left"><em>se le</em></td>
+</tr>
+<tr class="even">
+<td align="left"><em>nel</em></td>
+<td align="left"><em>ne la, ne l’</em></td>
+<td align="left"><em>nei</em></td>
+<td align="left"><em>ne le</em></td>
+</tr>
+<tr class="odd">
+<td align="left"><em>col</em></td>
+<td align="left"><em>co la, co l’</em></td>
+<td align="left"><em>coi</em></td>
+<td align="left"><em>co le</em></td>
+</tr>
+</tbody>
+</table>
+<p>Note: The contracted version of the definite masculine article is written as <em>’l</em>; e.g., <em>ogni domenica la fa ’l pranzo</em>.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="data-processing.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="annotation.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/04-transcription.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Istria-Kvarner spoken corpus: Procedures and guidelines.pdf", "Istria-Kvarner spoken corpus: Procedures and guidelines.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

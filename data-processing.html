@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 Data processing | Istria-Kvarner spoken corpus: Procedures and guidelines [DRAFT]</title>
+  <meta name="description" content="Chapter 3 Data processing | Istria-Kvarner spoken corpus: Procedures and guidelines [DRAFT]" />
+  <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 Data processing | Istria-Kvarner spoken corpus: Procedures and guidelines [DRAFT]" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 Data processing | Istria-Kvarner spoken corpus: Procedures and guidelines [DRAFT]" />
+  
+  
+  
+
+<meta name="author" content="Keith Langston" />
+
+
+<meta name="date" content="2023-10-11" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="data-management.html"/>
+<link rel="next" href="transcription.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Istria-Kvarner spoken corpus: Procedures and Guidelines</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="1" data-path="data-collection.html"><a href="data-collection.html"><i class="fa fa-check"></i><b>1</b> Data collection</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="data-collection.html"><a href="data-collection.html#outline-interview"><i class="fa fa-check"></i><b>1.1</b> Outline of interview</a></li>
+<li class="chapter" data-level="1.2" data-path="data-collection.html"><a href="data-collection.html#recording-instructions"><i class="fa fa-check"></i><b>1.2</b> Recording instructions</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="data-management.html"><a href="data-management.html"><i class="fa fa-check"></i><b>2</b> Data management</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="data-management.html"><a href="data-management.html#file-types-file-names"><i class="fa fa-check"></i><b>2.1</b> File types and file names used in this project</a></li>
+<li class="chapter" data-level="2.2" data-path="data-management.html"><a href="data-management.html#back-ups"><i class="fa fa-check"></i><b>2.2</b> Backing up data</a></li>
+<li class="chapter" data-level="2.3" data-path="data-management.html"><a href="data-management.html#metadata"><i class="fa fa-check"></i><b>2.3</b> Metadata</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="data-processing.html"><a href="data-processing.html"><i class="fa fa-check"></i><b>3</b> Data processing</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="data-processing.html"><a href="data-processing.html#segment-interview"><i class="fa fa-check"></i><b>3.1</b> Segment interview into smaller chunks</a></li>
+<li class="chapter" data-level="3.2" data-path="data-processing.html"><a href="data-processing.html#speech-to-text"><i class="fa fa-check"></i><b>3.2</b> Speech to text</a></li>
+<li class="chapter" data-level="3.3" data-path="data-processing.html"><a href="data-processing.html#speaker-diarization"><i class="fa fa-check"></i><b>3.3</b> Speaker diarization</a></li>
+<li class="chapter" data-level="3.4" data-path="data-processing.html"><a href="data-processing.html#forced-alignment"><i class="fa fa-check"></i><b>3.4</b> Forced alignment</a></li>
+<li class="chapter" data-level="3.5" data-path="data-processing.html"><a href="data-processing.html#prepare-ELAN"><i class="fa fa-check"></i><b>3.5</b> Prepare ELAN file for annotation</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="transcription.html"><a href="transcription.html"><i class="fa fa-check"></i><b>4</b> Transcription</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="transcription.html"><a href="transcription.html#using-praat-transcription"><i class="fa fa-check"></i><b>4.1</b> Using Praat to transcribe audio</a></li>
+<li class="chapter" data-level="4.2" data-path="transcription.html"><a href="transcription.html#general-principles-transcription"><i class="fa fa-check"></i><b>4.2</b> General principles for transcription</a></li>
+<li class="chapter" data-level="4.3" data-path="transcription.html"><a href="transcription.html#čakavian-štokavian-transcription"><i class="fa fa-check"></i><b>4.3</b> Čakavian and Štokavian varieties</a></li>
+<li class="chapter" data-level="4.4" data-path="transcription.html"><a href="transcription.html#istro-romanian-transcription"><i class="fa fa-check"></i><b>4.4</b> Istro-Romanian</a></li>
+<li class="chapter" data-level="4.5" data-path="transcription.html"><a href="transcription.html#istriot-transcription"><i class="fa fa-check"></i><b>4.5</b> Istriot</a></li>
+<li class="chapter" data-level="4.6" data-path="transcription.html"><a href="transcription.html#istro-venetian-transcription"><i class="fa fa-check"></i><b>4.6</b> Istro-Venetian and Fiuman</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="annotation.html"><a href="annotation.html"><i class="fa fa-check"></i><b>5</b> Annotation</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="annotation.html"><a href="annotation.html#using-ELAN-annotation"><i class="fa fa-check"></i><b>5.1</b> Using ELAN to annotate audio</a></li>
+<li class="chapter" data-level="5.2" data-path="annotation.html"><a href="annotation.html#lemmatization"><i class="fa fa-check"></i><b>5.2</b> Lemmatization</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="annotation.html"><a href="annotation.html#čakavian-lemmatization"><i class="fa fa-check"></i><b>5.2.1</b> Čakavian</a></li>
+<li class="chapter" data-level="5.2.2" data-path="annotation.html"><a href="annotation.html#istro-romanian-lemmatization"><i class="fa fa-check"></i><b>5.2.2</b> Istro-Romanian</a></li>
+<li class="chapter" data-level="5.2.3" data-path="annotation.html"><a href="annotation.html#istriot-lemmatization"><i class="fa fa-check"></i><b>5.2.3</b> Istriot</a></li>
+<li class="chapter" data-level="5.2.4" data-path="annotation.html"><a href="annotation.html#istro-venetian-lemmatization"><i class="fa fa-check"></i><b>5.2.4</b> Istro-Venetian</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="annotation.html"><a href="annotation.html#pos-tags"><i class="fa fa-check"></i><b>5.3</b> Part of speech tags</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="annotation.html"><a href="annotation.html#čakavian-pos"><i class="fa fa-check"></i><b>5.3.1</b> Čakavian</a></li>
+<li class="chapter" data-level="5.3.2" data-path="annotation.html"><a href="annotation.html#istro-romanian-pos"><i class="fa fa-check"></i><b>5.3.2</b> Istro-Romanian</a></li>
+<li class="chapter" data-level="5.3.3" data-path="annotation.html"><a href="annotation.html#istriot-pos"><i class="fa fa-check"></i><b>5.3.3</b> Istriot</a></li>
+<li class="chapter" data-level="5.3.4" data-path="annotation.html"><a href="annotation.html#istro-venetian-pos"><i class="fa fa-check"></i><b>5.3.4</b> Istro-Venetian</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="annotation.html"><a href="annotation.html#morphosyntactic-features"><i class="fa fa-check"></i><b>5.4</b> Morphosyntactic features</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="annotation.html"><a href="annotation.html#čakavian-morphosyntactic-features"><i class="fa fa-check"></i><b>5.4.1</b> Čakavian</a></li>
+<li class="chapter" data-level="5.4.2" data-path="annotation.html"><a href="annotation.html#istro-romanian-morphosyntactic-features"><i class="fa fa-check"></i><b>5.4.2</b> Istro-Romanian</a></li>
+<li class="chapter" data-level="5.4.3" data-path="annotation.html"><a href="annotation.html#istriot-istro-venetian-morphosyntactic-features"><i class="fa fa-check"></i><b>5.4.3</b> Istriot and Istro-Venetian</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="annotation.html"><a href="annotation.html#language-contact"><i class="fa fa-check"></i><b>5.5</b> Language contact phenomena</a></li>
+<li class="chapter" data-level="5.6" data-path="annotation.html"><a href="annotation.html#translation"><i class="fa fa-check"></i><b>5.6</b> Translation</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Istria-Kvarner spoken corpus: Procedures and guidelines [DRAFT]</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="data-processing" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Data processing<a href="data-processing.html#data-processing" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>overview of workflow as introduction</p>
+<div id="segment-interview" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Segment interview into smaller chunks<a href="data-processing.html#segment-interview" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Create Praat TextGrid, divide audio file into approximately 10-min segments</p>
+<ul>
+<li><p>annotate &gt; to Text Grid</p></li>
+<li><p>label Text Grid as “topics” (tier type: interval; there will be no point tiers)</p></li>
+<li><p>use the zoom controls to get to a view that contains a reasonable amount of the file, but where you can still see some detail in the waveform to help decide where to place interval boundaries</p></li>
+<li><p>select the textgrid interval and use Tab key to start and stop playing – stop before the moving cursor reaches the edge of the window, and use the scroll bar at the bottom to advance the view (unfortunately, Praat doesn’t automatically scroll the waveform)</p></li>
+<li><p>place a boundary at the end of the oral consent and label this interval “consent”</p></li>
+<li><p>divide the remainder of the sociolinguistic interview into approximately 10 minute segments. Place the boundaries between the end of the participant’s answer and the next question from the interviewer, if possible; otherwise place the boundary within a longer pause by the speaker. Label each section with a consecutive number (1, 2, 3, etc.)</p></li>
+<li><p>label the last interval (containing demographic info) as “demographic questionnaire”</p></li>
+<li><p>use Praat script to extract the audio as separate files</p></li>
+</ul>
+<p>Edit the names of the .wav and .TextGrid files: the first and last segments should have _consent and _demographic-questionnaire appended, and the remaining files should be numbered consecutively as _01, _02, etc. Make sure that the numbering is correct; you can use the numbers contained in the TextGrid annotations to check your work.</p>
+</div>
+<div id="speech-to-text" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Speech to text<a href="data-processing.html#speech-to-text" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>If this is helpful: use BedWord <a href="https://mamarcus64.github.io/BedWord/#/" class="uri">https://mamarcus64.github.io/BedWord/#/</a> for an automated transcription using standard Croatian / Italian / Romanian orthography.</p>
+</div>
+<div id="speaker-diarization" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Speaker diarization<a href="data-processing.html#speaker-diarization" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>BedWord will output Praat textgrid, but will not separate the different speakers. Add a tier for the second speaker and label tiers appropriately. Divide automatic transcription between tiers and make any adjustments to boundaries as needed (Don’t know whether it will be possible for UGA RAs to do this – transcribers may have to do this themselves, if we end up using the automatic transcription.)</p>
+<p>Audio file and TextGrid sent to transcriber, who will adjust / add utterance boundaries as needed.</p>
+</div>
+<div id="forced-alignment" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> Forced alignment<a href="data-processing.html#forced-alignment" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>After transcription is complete, use WebMAUS for forced alignment:</p>
+<ul>
+<li><p>resample audio to 16000 Hz in Praat, save as separate file</p></li>
+<li><p>use Python script textgrid_to_par.py to create .par file from TextGrid (convert orthography to SAMPA) [Note: works best to make a new copy of TextGrid file, delete occurrences of @ indicating hesitation, and delete overlapping speech – keep the speech from whichever speaker sounds louder. The script currently has a glitch that doesn’t replace orthographic đ – need to use find and replace to change đ to dZ’]
+Helpful hint for Mac users: use a dedicated folder to process TextGrid files (e.g. on Desktop), open terminal window at folder, then will just need to enter file name, not full path (use shortened file names for modified files used for processing here)</p></li>
+<li><p>process using WebMAUS General, language independent model [best to use Google Chrome browser]
+<a href="https://clarin.phonetik.uni-muenchen.de/BASWebServices/interface/WebMAUSGeneral" class="uri">https://clarin.phonetik.uni-muenchen.de/BASWebServices/interface/WebMAUSGeneral</a>
+choose
+Language: language indep. (sampa),
+MAUS modus: forced alignment to input transcript,
+Input encoding: X-SAMPA (ASCII),
+Output format: Praat (TextGrid)</p></li>
+</ul>
+<p>if you get an error message, click on the message for more details</p>
+<ul>
+<li><p>use Merge function in Praat to add the word-level tier to the TextGrid with utterances</p></li>
+<li><p>manually correct alignment (make utterance and word boundaries match, adjust word boundaries as needed)
+[Note: this is currently taking about 4 hours per 10 minutes of audio!]</p></li>
+</ul>
+</div>
+<div id="prepare-ELAN" class="section level2 hasAnchor" number="3.5">
+<h2><span class="header-section-number">3.5</span> Prepare ELAN file for annotation<a href="data-processing.html#prepare-ELAN" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><p>create new ELAN file, add template and audio file</p></li>
+<li><p>import Praat text grid; ELAN will add Text and Word tiers with -01 appended. Check to make sure that audio matches transcription and that alignment seems OK.</p></li>
+<li><p>copy annotations to the corresponding existing tiers (Tier &gt; Copy annotation from tier to tier)</p></li>
+<li><p>delete the -01 tiers (Tier &gt; Delete tier)</p></li>
+<li><p>make sure all tiers are in the proper order (should be correct when creating new file from template, but double check this)</p></li>
+<li><p>create annotations on dependent tiers (Tier &gt; Create annotations on dependent tiers)</p></li>
+</ul>
+<p>Pass .eaf and audio file to annotator</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="data-management.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="transcription.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/03-processing.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Istria-Kvarner spoken corpus: Procedures and guidelines.pdf", "Istria-Kvarner spoken corpus: Procedures and guidelines.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
